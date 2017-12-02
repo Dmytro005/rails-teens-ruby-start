@@ -22,6 +22,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'devise'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
+#avatars
+gem 'gravtastic'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -34,7 +36,7 @@ gem 'carrierwave'
 # gem 'bcrypt', '~> 3.1.7'
 
 #Fix bcrypt error
-gem 'bcrypt', platforms: :ruby
+gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
