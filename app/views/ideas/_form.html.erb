@@ -24,6 +24,11 @@
   <div class="field">
     <%= form.file_field :picture, id: :idea_picture %>
   </div>
+  
+  <!-- -->
+  <%= form.hidden_field :user_id, value: current_user.id %>
+
+
   <div class="actions">
     <%= form.submit %>
   </div>
